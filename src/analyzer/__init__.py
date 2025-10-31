@@ -1,0 +1,1 @@
+"""Analyzer Module für Konkurrenzanalyse"""

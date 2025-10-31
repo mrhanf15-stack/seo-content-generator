@@ -1,0 +1,114 @@
+{
+  "api_keys": {
+    "openai": "your-openai-api-key-here",
+    "openai_model": "gpt-4.1-mini",
+    "image_generator": "dall-e-3"
+  },
+  "google_search": {
+    "base_url": "https://www.google.de/search",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "results_count": 5,
+    "language": "de",
+    "country": "de"
+  },
+  "scoring": {
+    "target_score_min": 75,
+    "target_score_good": 85,
+    "target_score_excellent": 90,
+    "max_iterations": 5,
+    "weights": {
+      "keyword_optimization": 0.20,
+      "structure_readability": 0.25,
+      "content_quality": 0.30,
+      "technical_seo": 0.15,
+      "engagement": 0.10
+    }
+  },
+  "content": {
+    "language": "de",
+    "word_count_min": 800,
+    "word_count_max": 1200,
+    "word_count_tolerance": 100,
+    "tone": "professional-casual",
+    "address_form": "du",
+    "paragraph_length_max": 150,
+    "sentence_length_max": 25
+  },
+  "seo": {
+    "meta_title_length_min": 50,
+    "meta_title_length_max": 60,
+    "meta_description_length_min": 140,
+    "meta_description_length_max": 160,
+    "keyword_density_min": 0.01,
+    "keyword_density_max": 0.03,
+    "h1_count": 1,
+    "h2_count_min": 3,
+    "h2_count_max": 8,
+    "image_count_min": 2,
+    "image_count_max": 5
+  },
+  "content_types": {
+    "blog": {
+      "description": "Informativer Blog-Artikel oder Ratgeber",
+      "focus": "information",
+      "structure": ["einleitung", "hauptteil", "fazit"],
+      "cta_required": false
+    },
+    "produktbeschreibung": {
+      "description": "E-Commerce Produktbeschreibung",
+      "focus": "conversion",
+      "structure": ["highlights", "details", "vorteile", "technische_daten"],
+      "cta_required": true
+    },
+    "kategorie": {
+      "description": "SEO-Text für Shop-Kategorie",
+      "focus": "seo",
+      "structure": ["übersicht", "produktvorstellung", "kaufberatung"],
+      "cta_required": true
+    },
+    "ratgeber": {
+      "description": "Ausführlicher How-to-Guide",
+      "focus": "education",
+      "structure": ["problem", "lösung", "schritt_für_schritt", "tipps"],
+      "cta_required": false
+    },
+    "vergleich": {
+      "description": "Produkt- oder Dienstleistungsvergleich",
+      "focus": "comparison",
+      "structure": ["einleitung", "vergleichskriterien", "einzelbewertung", "fazit"],
+      "cta_required": true
+    }
+  },
+  "images": {
+    "generate": true,
+    "count_default": 3,
+    "style": "professional",
+    "format": "png",
+    "size": "1792x1024",
+    "quality": "hd"
+  },
+  "output": {
+    "format": "html",
+    "framework": "bootstrap4",
+    "include_meta": true,
+    "include_schema": true,
+    "save_markdown": true,
+    "save_json": true
+  },
+  "reporting": {
+    "generate_dashboard": true,
+    "save_history": true,
+    "export_pdf": false,
+    "include_competitor_data": true
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/seo_generator.log",
+    "console": true
+  },
+  "github": {
+    "save_to_repo": true,
+    "commit_message_template": "Generated content for keyword: {keyword}",
+    "branch": "main"
+  }
+}
